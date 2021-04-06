@@ -8,7 +8,8 @@ public class CalculadoraCFC extends Calculadora {
 	
 	@Override
 	public double calcula(double peso, double raio) {
-		return (2.93648997e-4 * peso) / (raio * raio * raio);
+		double constCFC = 2.93648997e-4;
+		return (constCFC * peso) / (raio * raio * raio);
 	}
 
 }

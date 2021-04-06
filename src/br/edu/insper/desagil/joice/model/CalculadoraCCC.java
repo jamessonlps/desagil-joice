@@ -8,7 +8,8 @@ public class CalculadoraCCC extends Calculadora {
 	
 	@Override
 	public double calcula(double peso, double raio) {
-		return (2.6964e-4 * peso) / (raio * raio * raio);
+		double constCCC = 2.6964e-4;
+		return (constCCC * peso) / (raio * raio * raio);
 	}
 
 }
